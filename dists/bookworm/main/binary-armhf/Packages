@@ -170,3 +170,785 @@ Description: Reefwing MultiWii Serial Protocol (documentation)
  Implementation of the MultiWii Serial Protocol (MSP) for MultiWii and Cleanflight flight controller
  This package provides the documentation.
 
+Package: libopencv-calib3d-dev
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 798
+Depends: libopencv-calib3d413 (= 4.13.0), libopencv-core-dev (= 4.13.0)
+Filename: pool/bookworm/main/libopencv-calib3d-dev_4.13.0_armhf.deb
+Size: 545292
+MD5sum: ac05490d92d0c14f5a596bf8d4421337
+SHA1: fb9f457d2ab70f31a51456023a1fc63129b67686
+SHA256: 0d4f02e464016e9320fc67a1fa3180d3b8533b4b03172c164a5a70da2a40f4e4
+Section: libdevel
+Priority: optional
+Description: Open Source Computer Vision Library (the calib3d module - development)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the C++ development headers for the calib3d module.
+
+Package: libopencv-calib3d413
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 2048
+Depends: libc6 (>= 2.36), libgcc-s1, libopencv-core413 (>= 4.13.0), libopencv-features2d413 (>= 4.13.0), libopencv-flann413 (>= 4.13.0), libopencv-imgproc413 (>= 4.13.0), libstdc++6
+Filename: pool/bookworm/main/libopencv-calib3d413_4.13.0_armhf.deb
+Size: 1205268
+MD5sum: 1a04a629b44f66d9ef9919d824f46244
+SHA1: 746b983a76926b190b7b4602fa2659a5fcb696ca
+SHA256: 2f1cc2c0a3e7fdc264112ee14617c2c6858cff288643e163cd6b8559065c2bd3
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: Open Source Computer Vision Library (calib3d module - runtime)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the calib3d module shared library.
+
+Package: libopencv-contrib-dev
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 2755
+Depends: libopencv-contrib413 (= 4.13.0), libopencv-calib3d-dev (= 4.13.0), libopencv-core-dev (= 4.13.0), libopencv-dnn-dev (= 4.13.0), libopencv-features2d-dev (= 4.13.0), libopencv-flann-dev (= 4.13.0), libopencv-highgui-dev (= 4.13.0), libopencv-imgcodecs-dev (= 4.13.0), libopencv-imgproc-dev (= 4.13.0), libopencv-ml-dev (= 4.13.0), libopencv-objdetect-dev (= 4.13.0), libopencv-photo-dev (= 4.13.0), libopencv-shape-dev (= 4.13.0), libopencv-stitching-dev (= 4.13.0), libopencv-superres-dev (= 4.13.0), libopencv-video-dev (= 4.13.0), libopencv-videoio-dev (= 4.13.0), libopencv-videostab-dev (= 4.13.0)
+Filename: pool/bookworm/main/libopencv-contrib-dev_4.13.0_armhf.deb
+Size: 830648
+MD5sum: 3397708ef06d3cac6fb119a886869135
+SHA1: 55058a955ab0addcb7a4749351e61c83b6cc64d8
+SHA256: 1553345288497883658feceaad4233b9d2b8bfbdd30ff429775e9798b07d4276
+Section: libdevel
+Priority: optional
+Description: Open Source Computer Vision Library (the contrib modules - development)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the C++ development headers for the contrib modules.
+
+Package: libopencv-contrib413
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 11864
+Depends: libc6 (>= 2.36), libfreetype6 (>= 2.12), libgcc-s1, libglib2.0-0 (>= 2.74.6), libgstreamer-plugins-base1.0-0 (>= 1.22.0), libgstreamer1.0-0 (>= 1.22.0), libharfbuzz0b (>= 6.0.0+dfsg), libopencv-calib3d413 (>= 4.13.0), libopencv-core413 (>= 4.13.0), libopencv-dnn413 (>= 4.13.0), libopencv-features2d413 (>= 4.13.0), libopencv-flann413 (>= 4.13.0), libopencv-highgui413 (>= 4.13.0), libopencv-imgcodecs413 (>= 4.13.0), libopencv-imgproc413 (>= 4.13.0), libopencv-ml413 (>= 4.13.0), libopencv-objdetect413 (>= 4.13.0), libopencv-video413 (>= 4.13.0), libstdc++6
+Filename: pool/bookworm/main/libopencv-contrib413_4.13.0_armhf.deb
+Size: 5461512
+MD5sum: b394c3f65cb5e239e0b7d310d4db281f
+SHA1: 05623fff1a0b94e373f4e443833a430b4e90d34a
+SHA256: e055dabf05eac361643de2f801b876aa2ed65b29bd4cba3dc75ee2b5497d886e
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: Open Source Computer Vision Library (contrib modules - runtime)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the contrib modules shared library.
+
+Package: libopencv-core-dev
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 4450
+Depends: libopencv-core413 (= 4.13.0)
+Filename: pool/bookworm/main/libopencv-core-dev_4.13.0_armhf.deb
+Size: 979924
+MD5sum: 1722d5821760f44980b36ebcbc11e8aa
+SHA1: d42f0510d99fd7e720163171c3ec87f68149275f
+SHA256: b72a098759c141a577ba129f9eeea115d22a184fffb02301b6b36f274f78f598
+Section: libdevel
+Priority: optional
+Description: Open Source Computer Vision Library (the core module - development)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the C++ development headers for the core module.
+
+Package: libopencv-core413
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 2742
+Depends: libc6 (>= 2.36), libgcc-s1, libstdc++6, zlib1g (>= 1:1.2.3.3.dfsg-1)
+Filename: pool/bookworm/main/libopencv-core413_4.13.0_armhf.deb
+Size: 1395780
+MD5sum: 346251ea573dd8f80b06c117d2d4a547
+SHA1: 59799301336389b185dbe84e5e5812d49e3e3dab
+SHA256: 7357228637328d16ba4f2f1ac6f98160d5c3997c6a6f5f4dc73e881d78759c0f
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: Open Source Computer Vision Library (core module - runtime)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the core module shared library.
+
+Package: libopencv-dev
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 801
+Depends: libopencv-calib3d-dev (= 4.13.0), libopencv-core-dev (= 4.13.0), libopencv-dnn-dev (= 4.13.0), libopencv-features2d-dev (= 4.13.0), libopencv-flann-dev (= 4.13.0), libopencv-highgui-dev (= 4.13.0), libopencv-imgcodecs-dev (= 4.13.0), libopencv-imgproc-dev (= 4.13.0), libopencv-ml-dev (= 4.13.0), libopencv-objdetect-dev (= 4.13.0), libopencv-photo-dev (= 4.13.0), libopencv-shape-dev (= 4.13.0), libopencv-stitching-dev (= 4.13.0), libopencv-superres-dev (= 4.13.0), libopencv-video-dev (= 4.13.0), libopencv-videoio-dev (= 4.13.0), libopencv-videostab-dev (= 4.13.0), libopencv-contrib-dev (= 4.13.0), pkgconf, libc6 (>= 2.36), libgcc-s1, libopencv-calib3d413 (>= 4.13.0), libopencv-contrib413 (>= 4.13.0), libopencv-core413 (>= 4.13.0), libopencv-dnn413 (>= 4.13.0), libopencv-features2d413 (>= 4.13.0), libopencv-highgui413 (>= 4.13.0), libopencv-imgcodecs413 (>= 4.13.0), libopencv-imgproc413 (>= 4.13.0), libopencv-objdetect413 (>= 4.13.0), libopencv-videoio413 (>= 4.13.0), libstdc++6
+Recommends: opencv-data
+Filename: pool/bookworm/main/libopencv-dev_4.13.0_armhf.deb
+Size: 576148
+MD5sum: 9f0636a96adf38b22f9eebbfd251eb1b
+SHA1: c53719d96d618fcc3dd8cbb3304189801306cde5
+SHA256: 55afacdcbc5622a10cbaa2e391e3492cbe259c42352e59fd330e9a2f97af3ae1
+Section: libdevel
+Priority: optional
+Description: Open Source Computer Vision Library (development meta-package)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This metapackage pulls in the C++ development files for every OpenCV
+ module, ships the CMake/pkg-config files and the OpenCV command-line
+ tools, so find_package(OpenCV) and pkg-config opencv4 work after install.
+
+Package: libopencv-dnn-dev
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 730
+Depends: libopencv-dnn413 (= 4.13.0), libopencv-core-dev (= 4.13.0)
+Filename: pool/bookworm/main/libopencv-dnn-dev_4.13.0_armhf.deb
+Size: 530196
+MD5sum: 8e6ac619b5d6caf935cb7f36a55b8869
+SHA1: eb78cac823631e405234c70a7bdba26158d6c61e
+SHA256: b6dd5d8db738660b971bd1fc5d7e7f2d5deb837743564abdbe2907fd25d681a9
+Section: libdevel
+Priority: optional
+Description: Open Source Computer Vision Library (the dnn module - development)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the C++ development headers for the dnn module.
+
+Package: libopencv-dnn413
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 4751
+Depends: libc6 (>= 2.36), libgcc-s1, libopencv-core413 (>= 4.13.0), libopencv-imgproc413 (>= 4.13.0), libstdc++6
+Filename: pool/bookworm/main/libopencv-dnn413_4.13.0_armhf.deb
+Size: 2086980
+MD5sum: b67c98c205ce072691bdf3a0d443ab52
+SHA1: 4a113189468cef4d55e9832b44d42d0db197715c
+SHA256: 8a60fa32262650a43cd0232455067cb335028d5945b203eb201191259e2f5a26
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: Open Source Computer Vision Library (dnn module - runtime)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the dnn module shared library.
+
+Package: libopencv-features2d-dev
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 629
+Depends: libopencv-features2d413 (= 4.13.0), libopencv-core-dev (= 4.13.0)
+Filename: pool/bookworm/main/libopencv-features2d-dev_4.13.0_armhf.deb
+Size: 515588
+MD5sum: 7892e6c410f442aa1904bfe87244eddf
+SHA1: b91d4ed8c846fe05731fc935069fbb26fbf6029a
+SHA256: edb303ba40b7be320253c011c5a69cf8fc90d01dc2f913f0e854eb4322aa2530
+Section: libdevel
+Priority: optional
+Description: Open Source Computer Vision Library (the features2d module - development)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the C++ development headers for the features2d module.
+
+Package: libopencv-features2d413
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 1044
+Depends: libc6 (>= 2.36), libgcc-s1, libopencv-core413 (>= 4.13.0), libopencv-flann413 (>= 4.13.0), libopencv-imgproc413 (>= 4.13.0), libstdc++6
+Filename: pool/bookworm/main/libopencv-features2d413_4.13.0_armhf.deb
+Size: 717236
+MD5sum: afb50642a1dac460a0685b665a6b7cbf
+SHA1: 7853d26a7d0e3f86b7d1ee5db086979815829e5f
+SHA256: 852420cbc9f85b867f7c451850f228f2706a26b2ef8f91f30ada095468f8b262
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: Open Source Computer Vision Library (features2d module - runtime)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the features2d module shared library.
+
+Package: libopencv-flann-dev
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 964
+Depends: libopencv-flann413 (= 4.13.0), libopencv-core-dev (= 4.13.0)
+Filename: pool/bookworm/main/libopencv-flann-dev_4.13.0_armhf.deb
+Size: 554676
+MD5sum: f0d93e7f70d626c7a37e6d488a36074e
+SHA1: 937703b2dbcbda6257c1cde2b2f2a9f62a455d27
+SHA256: f47892b4c1b7d4df589ad5c06dbb0f6144e9076fdf867f88fe4a852e0ed26149
+Section: libdevel
+Priority: optional
+Description: Open Source Computer Vision Library (the flann module - development)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the C++ development headers for the flann module.
+
+Package: libopencv-flann413
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 836
+Depends: libc6 (>= 2.36), libgcc-s1, libopencv-core413 (>= 4.13.0), libstdc++6
+Filename: pool/bookworm/main/libopencv-flann413_4.13.0_armhf.deb
+Size: 603556
+MD5sum: b1c903028412c5d41722a7d2e7b4a381
+SHA1: 856717cc32f02256548f6e64112d1e264fc0ec28
+SHA256: 6cd6660f81adb011b2b7bb43ccb4d162a5bd40802ae479aa8bdc40981b06bdde
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: Open Source Computer Vision Library (flann module - runtime)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the flann module shared library.
+
+Package: libopencv-highgui-dev
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 603
+Depends: libopencv-highgui413 (= 4.13.0), libopencv-core-dev (= 4.13.0)
+Filename: pool/bookworm/main/libopencv-highgui-dev_4.13.0_armhf.deb
+Size: 511572
+MD5sum: 0ece2b1e238b9046e56bdcfbf32d165d
+SHA1: c5da1a7390306ac39c73a99998c6b88ae30a6bfb
+SHA256: bfc02a14bbe76f02eb258a10032dc620067e8566a5b271c693cb3f78ba782892
+Section: libdevel
+Priority: optional
+Description: Open Source Computer Vision Library (the highgui module - development)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the C++ development headers for the highgui module.
+
+Package: libopencv-highgui413
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 720
+Depends: libc6 (>= 2.36), libcairo2 (>= 1.16.0), libgcc-s1, libgdk-pixbuf-2.0-0 (>= 2.42.10+dfsg), libglib2.0-0 (>= 2.74.6), libgtk-3-0 (>= 1:3.24.38), libopencv-core413 (>= 4.13.0), libopencv-imgcodecs413 (>= 4.13.0), libopencv-imgproc413 (>= 4.13.0), libstdc++6
+Filename: pool/bookworm/main/libopencv-highgui413_4.13.0_armhf.deb
+Size: 573588
+MD5sum: 0e9429bd0529392538b19fcadb7eaf4a
+SHA1: db3dd506deeb2aaba86e1b8b3a2f83831c961f4c
+SHA256: 30b640d30b56687f6239271e816a0364fe80bd056968cad9c165bda8f0cb2732
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: Open Source Computer Vision Library (highgui module - runtime)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the highgui module shared library.
+
+Package: libopencv-imgcodecs-dev
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 613
+Depends: libopencv-imgcodecs413 (= 4.13.0), libopencv-core-dev (= 4.13.0)
+Filename: pool/bookworm/main/libopencv-imgcodecs-dev_4.13.0_armhf.deb
+Size: 513340
+MD5sum: ee92f424806ab1e5dc13f01c429ab535
+SHA1: 3cd989e7e73bbdb4d028590f354f814ecfa041af
+SHA256: 96877a2047a4394e4dc7c7214309339ab2563ef9e2c8d7aecf35d36bda716601
+Section: libdevel
+Priority: optional
+Description: Open Source Computer Vision Library (the imgcodecs module - development)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the C++ development headers for the imgcodecs module.
+
+Package: libopencv-imgcodecs413
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 936
+Depends: libc6 (>= 2.36), libgcc-s1, libjpeg62-turbo (>= 1:2.1.5), libopencv-core413 (>= 4.13.0), libopencv-imgproc413 (>= 4.13.0), libopenexr-3-1-30 (>= 3.1.5), libopenjp2-7 (>= 2.5.0), libpng16-16 (>= 1.6.2-1), libstdc++6, libtiff6 (>= 4.5.0), libwebp7 (>= 1.2.4), libwebpdemux2 (>= 1.2.4), libwebpmux3 (>= 1.2.4), zlib1g (>= 1:1.2.3.3.dfsg-1)
+Filename: pool/bookworm/main/libopencv-imgcodecs413_4.13.0_armhf.deb
+Size: 676840
+MD5sum: c7c77936b53fdaa41a0220e691074c7f
+SHA1: 90092bed2160828fce3c1a13d303ec94bed57224
+SHA256: 96cf224697a203c3143995793ae21a33f7bb373bdd10c563e2785c2fed5eff25
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: Open Source Computer Vision Library (imgcodecs module - runtime)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the imgcodecs module shared library.
+
+Package: libopencv-imgproc-dev
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 925
+Depends: libopencv-imgproc413 (= 4.13.0), libopencv-core-dev (= 4.13.0)
+Filename: pool/bookworm/main/libopencv-imgproc-dev_4.13.0_armhf.deb
+Size: 576440
+MD5sum: 50bb2ba029709a15ba7dd9aac205b0a4
+SHA1: 037fa9665ef520341ac9fbdd3eb826699457bdac
+SHA256: f82de8475c9eb01e54dbf00e55ca0a648b32584df6c9ec64e4ec8bfb19a90b14
+Section: libdevel
+Priority: optional
+Description: Open Source Computer Vision Library (the imgproc module - development)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the C++ development headers for the imgproc module.
+
+Package: libopencv-imgproc413
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 2914
+Depends: libc6 (>= 2.36), libgcc-s1, libopencv-core413 (>= 4.13.0), libstdc++6
+Filename: pool/bookworm/main/libopencv-imgproc413_4.13.0_armhf.deb
+Size: 1438944
+MD5sum: 48c381c59ab25f5b5f15368398206ea8
+SHA1: 4e4bbf8c26f2588c257721dadd7d5567185217a5
+SHA256: f27e27d6c889c01795ec1d010a960ab5915f11e82e9f768ef148e0134b5d55cb
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: Open Source Computer Vision Library (imgproc module - runtime)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the imgproc module shared library.
+
+Package: libopencv-ml-dev
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 648
+Depends: libopencv-ml413 (= 4.13.0), libopencv-core-dev (= 4.13.0)
+Filename: pool/bookworm/main/libopencv-ml-dev_4.13.0_armhf.deb
+Size: 520752
+MD5sum: 81e6bb9bf6ad40d1241d60e74cfd784a
+SHA1: 279381dee51e1eadc3c9033ce4e08eb89ef844ce
+SHA256: 79b26d7c3e174a34f35dfd1f0953ba467ad6a82887532813feb31c401a80957d
+Section: libdevel
+Priority: optional
+Description: Open Source Computer Vision Library (the ml module - development)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the C++ development headers for the ml module.
+
+Package: libopencv-ml413
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 880
+Depends: libc6 (>= 2.36), libgcc-s1, libopencv-core413 (>= 4.13.0), libstdc++6
+Filename: pool/bookworm/main/libopencv-ml413_4.13.0_armhf.deb
+Size: 668156
+MD5sum: 30acb4eba45030783555c9007f9ba842
+SHA1: b88281563bbbda3eaaf8f8193b1c6e17f8df3f6f
+SHA256: 20968282e1241380ef533899bcea38c3c600867c2d3a14b242df1a9f01d6228b
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: Open Source Computer Vision Library (ml module - runtime)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the ml module shared library.
+
+Package: libopencv-objdetect-dev
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 677
+Depends: libopencv-objdetect413 (= 4.13.0), libopencv-core-dev (= 4.13.0)
+Filename: pool/bookworm/main/libopencv-objdetect-dev_4.13.0_armhf.deb
+Size: 524244
+MD5sum: bf38341855cbed1af437a11e5f65bc9d
+SHA1: fbc45d6b846c2e79f5a184dd7f5f11645b5f63bc
+SHA256: 7e8ed49e247740e14c6d9bc89062225bdb58837d049df3a042821b9d8d795132
+Section: libdevel
+Priority: optional
+Description: Open Source Computer Vision Library (the objdetect module - development)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the C++ development headers for the objdetect module.
+
+Package: libopencv-objdetect413
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 1361
+Depends: libc6 (>= 2.36), libgcc-s1, libopencv-calib3d413 (>= 4.13.0), libopencv-core413 (>= 4.13.0), libopencv-dnn413 (>= 4.13.0), libopencv-imgproc413 (>= 4.13.0), libstdc++6
+Filename: pool/bookworm/main/libopencv-objdetect413_4.13.0_armhf.deb
+Size: 968548
+MD5sum: bb6030645b7b1e3e93b5f1f737a5c1b3
+SHA1: f7b72ac536c66c8d2d157f5cf34a123addcd5d50
+SHA256: 48619e9cd392a29e5f4820b10470da4c00806574c17f4b2e59f0c45be3a9840a
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: Open Source Computer Vision Library (objdetect module - runtime)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the objdetect module shared library.
+
+Package: libopencv-photo-dev
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 604
+Depends: libopencv-photo413 (= 4.13.0), libopencv-core-dev (= 4.13.0)
+Filename: pool/bookworm/main/libopencv-photo-dev_4.13.0_armhf.deb
+Size: 510420
+MD5sum: 89977e55c024b2a101121f387895ed55
+SHA1: dfa5a32cc0309565aa9344457944ccc49c5ed404
+SHA256: 7b6674c3bf645e1c26ea4f8b2718f4356cfbc80aab34f63175099d8306875d45
+Section: libdevel
+Priority: optional
+Description: Open Source Computer Vision Library (the photo module - development)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the C++ development headers for the photo module.
+
+Package: libopencv-photo413
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 904
+Depends: libc6 (>= 2.36), libgcc-s1, libopencv-core413 (>= 4.13.0), libopencv-imgproc413 (>= 4.13.0), libstdc++6
+Filename: pool/bookworm/main/libopencv-photo413_4.13.0_armhf.deb
+Size: 650800
+MD5sum: 23a0b15115ed32e0a888753f92a47685
+SHA1: 956416568c66ac9a9f88b49f0bef3b95ff86039b
+SHA256: 6a7c0e1a4d8ae9b037311f54fbfda2424785da8462ff8cff95c60ceadd9dd906
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: Open Source Computer Vision Library (photo module - runtime)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the photo module shared library.
+
+Package: libopencv-shape-dev
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 584
+Depends: libopencv-shape413 (= 4.13.0), libopencv-core-dev (= 4.13.0)
+Filename: pool/bookworm/main/libopencv-shape-dev_4.13.0_armhf.deb
+Size: 504420
+MD5sum: 3240f2d01a42cd833b71f54649f97b51
+SHA1: b7fa26393ce5043ae8788b6aafd7772ca65fe609
+SHA256: 399d11ffabe19305d3b015fbd6b34be3433bb9ee298eeddcfa9aae78a8d0f0ca
+Section: libdevel
+Priority: optional
+Description: Open Source Computer Vision Library (the shape module - development)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the C++ development headers for the shape module.
+
+Package: libopencv-shape413
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 632
+Depends: libc6 (>= 2.36), libgcc-s1, libopencv-calib3d413 (>= 4.13.0), libopencv-core413 (>= 4.13.0), libopencv-imgproc413 (>= 4.13.0), libstdc++6
+Filename: pool/bookworm/main/libopencv-shape413_4.13.0_armhf.deb
+Size: 537048
+MD5sum: 6f238dce3050558cbc9e4669a91ae26e
+SHA1: fb7465955f9c1236160cde6de050aa56a1bce0c0
+SHA256: e60325c43559dd46db56e92c07e8fd93eaf405bb1b3df6cea2dac2519e4f661e
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: Open Source Computer Vision Library (shape module - runtime)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the shape module shared library.
+
+Package: libopencv-stitching-dev
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 697
+Depends: libopencv-stitching413 (= 4.13.0), libopencv-core-dev (= 4.13.0)
+Filename: pool/bookworm/main/libopencv-stitching-dev_4.13.0_armhf.deb
+Size: 518752
+MD5sum: c5b7c683d9ae1f5b42d28372270030e9
+SHA1: 56333526e1753ef177be4b0a12d18aad3307f60e
+SHA256: 9104bbd05ca3d7e378d6e7a2d99e06b34e3f70cfdd73e3bec0eb1f64687da90f
+Section: libdevel
+Priority: optional
+Description: Open Source Computer Vision Library (the stitching module - development)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the C++ development headers for the stitching module.
+
+Package: libopencv-stitching413
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 924
+Depends: libc6 (>= 2.36), libgcc-s1, libopencv-calib3d413 (>= 4.13.0), libopencv-core413 (>= 4.13.0), libopencv-features2d413 (>= 4.13.0), libopencv-flann413 (>= 4.13.0), libopencv-imgproc413 (>= 4.13.0), libstdc++6
+Filename: pool/bookworm/main/libopencv-stitching413_4.13.0_armhf.deb
+Size: 653576
+MD5sum: 75586dda6ac49bb35b564b964124bed5
+SHA1: 81e03f4b8e19a5e62ceae053b2fce82e92ec2382
+SHA256: 2be9ff6ca561896638f9d3236e4c3fdba1bb184ac983b620b2ae72166be37188
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: Open Source Computer Vision Library (stitching module - runtime)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the stitching module shared library.
+
+Package: libopencv-superres-dev
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 570
+Depends: libopencv-superres413 (= 4.13.0), libopencv-core-dev (= 4.13.0)
+Filename: pool/bookworm/main/libopencv-superres-dev_4.13.0_armhf.deb
+Size: 503092
+MD5sum: 18e2ed1368e1d044774eb93c821b64fd
+SHA1: 9c046b24afe8c10103c9005da98aa7b64fbbb71b
+SHA256: 0ca86c697f89bb50bb1c7aa4f1441f3807646f124cacc8ac80790abc0e2b8c85
+Section: libdevel
+Priority: optional
+Description: Open Source Computer Vision Library (the superres module - development)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the C++ development headers for the superres module.
+
+Package: libopencv-superres413
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 628
+Depends: libc6 (>= 2.36), libgcc-s1, libopencv-contrib413 (>= 4.13.0), libopencv-core413 (>= 4.13.0), libopencv-imgproc413 (>= 4.13.0), libopencv-video413 (>= 4.13.0), libopencv-videoio413 (>= 4.13.0), libstdc++6
+Filename: pool/bookworm/main/libopencv-superres413_4.13.0_armhf.deb
+Size: 530552
+MD5sum: 5c40e063b9de371221e84f99f35e0dc8
+SHA1: bb948c960cabede9bc1e0046e374586ffcf6d4e7
+SHA256: 301b1d5f20d10c41ed3bf8d05c88d5c10a0865cc3b7f7967dcb38586663f9028
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: Open Source Computer Vision Library (superres module - runtime)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the superres module shared library.
+
+Package: libopencv-video-dev
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 639
+Depends: libopencv-video413 (= 4.13.0), libopencv-core-dev (= 4.13.0)
+Filename: pool/bookworm/main/libopencv-video-dev_4.13.0_armhf.deb
+Size: 517888
+MD5sum: 047ab07727d6401845a20bf9f5cece77
+SHA1: 246672f8e73395e8843181418911ad1fa2d9ea33
+SHA256: bfdf6cd9bf23b8ca23c485dfd24b8641d52add40c5fdd8abebf93d0721f2f38f
+Section: libdevel
+Priority: optional
+Description: Open Source Computer Vision Library (the video module - development)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the C++ development headers for the video module.
+
+Package: libopencv-video413
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 900
+Depends: libc6 (>= 2.36), libgcc-s1, libopencv-calib3d413 (>= 4.13.0), libopencv-core413 (>= 4.13.0), libopencv-dnn413 (>= 4.13.0), libopencv-imgproc413 (>= 4.13.0), libstdc++6
+Filename: pool/bookworm/main/libopencv-video413_4.13.0_armhf.deb
+Size: 651996
+MD5sum: dfa048bf4737a71f07aac0faa700c7f1
+SHA1: 31ea49e89963a8786b677d21892b8fe591610de5
+SHA256: 22fc3d27eaa906a0c6781f7ba6bead81712f6d4b9c1a0571c357c20c23840cfc
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: Open Source Computer Vision Library (video module - runtime)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the video module shared library.
+
+Package: libopencv-videoio-dev
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 668
+Depends: libopencv-videoio413 (= 4.13.0), libopencv-core-dev (= 4.13.0)
+Filename: pool/bookworm/main/libopencv-videoio-dev_4.13.0_armhf.deb
+Size: 521496
+MD5sum: c927623983c177a214d83acef8907ba4
+SHA1: 8e248eec28ab473fe3d50deee663c692dbe1e93c
+SHA256: 31bbec8daf36364cd1937cf1d2648f744ee659c6f69a960b35f3fb121fc8218e
+Section: libdevel
+Priority: optional
+Description: Open Source Computer Vision Library (the videoio module - development)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the C++ development headers for the videoio module.
+
+Package: libopencv-videoio413
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 1048
+Depends: libavcodec59 (>= 8:5.1.8), libavformat59 (>= 8:5.1.8), libavutil57 (>= 8:5.1.8), libc6 (>= 2.36), libgcc-s1, libglib2.0-0 (>= 2.74.6), libgstreamer-plugins-base1.0-0 (>= 1.22.0), libgstreamer1.0-0 (>= 1.22.0), libopencv-core413 (>= 4.13.0), libopencv-imgcodecs413 (>= 4.13.0), libopencv-imgproc413 (>= 4.13.0), libstdc++6, libswscale6 (>= 8:5.1.8)
+Filename: pool/bookworm/main/libopencv-videoio413_4.13.0_armhf.deb
+Size: 718012
+MD5sum: ab4270fa798213503a3b163d2b55eb03
+SHA1: b5cfa49f2ab6c3a5a5c758325494e92dd3eb2bcd
+SHA256: 540e3f83a40a4e08e14e87b73c1bad8fa4ee9ecfb5e94dbcab9b908514965cd3
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: Open Source Computer Vision Library (videoio module - runtime)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the videoio module shared library.
+
+Package: libopencv-videostab-dev
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 634
+Depends: libopencv-videostab413 (= 4.13.0), libopencv-core-dev (= 4.13.0)
+Filename: pool/bookworm/main/libopencv-videostab-dev_4.13.0_armhf.deb
+Size: 509624
+MD5sum: 3d7039a45caa6af0fe829e6c42687099
+SHA1: d54b5316617ed249596247c11e4b3684822d1344
+SHA256: fa8fc390a1e3e146fca457ba5b7a62446b02855a4a88343875294f2f3cfb0e75
+Section: libdevel
+Priority: optional
+Description: Open Source Computer Vision Library (the videostab module - development)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the C++ development headers for the videostab module.
+
+Package: libopencv-videostab413
+Source: libopencv
+Version: 4.13.0
+Architecture: armhf
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 696
+Depends: libc6 (>= 2.36), libgcc-s1, libopencv-calib3d413 (>= 4.13.0), libopencv-core413 (>= 4.13.0), libopencv-features2d413 (>= 4.13.0), libopencv-imgproc413 (>= 4.13.0), libopencv-photo413 (>= 4.13.0), libopencv-video413 (>= 4.13.0), libopencv-videoio413 (>= 4.13.0), libstdc++6
+Filename: pool/bookworm/main/libopencv-videostab413_4.13.0_armhf.deb
+Size: 560268
+MD5sum: a937bd8e9cedb2b5f991313cd2cc5607
+SHA1: 617a767b94806e691b3a8152f888220d521caade
+SHA256: 296ea801e64fd6977408f3a81a2815544b16dadc46fcb1e351e6c47b83e9eec2
+Section: libs
+Priority: optional
+Multi-Arch: same
+Description: Open Source Computer Vision Library (videostab module - runtime)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the videostab module shared library.
+
+Package: opencv-data
+Source: libopencv
+Version: 4.13.0
+Architecture: all
+Maintainer: special-delivery <development@special-delivery.org>
+Installed-Size: 10981
+Filename: pool/bookworm/main/opencv-data_4.13.0_all.deb
+Size: 1836076
+MD5sum: 7ceea133450cb288f96510814c167255
+SHA1: 4fa7728174924159ffbfceb08142a01ffe29fdd9
+SHA256: 5359401d7a1b1f8456fdc720160a213f62ad781cc52e4302e4e29a7827895f29
+Section: libs
+Priority: optional
+Multi-Arch: foreign
+Description: Open Source Computer Vision Library (data files)
+ OpenCV (Open Source Computer Vision) is a library of programming
+ functions for real-time computer vision.
+ .
+ This package contains the architecture-independent data files OpenCV
+ installs (Haar/LBP cascade classifiers and the quality models).
+
