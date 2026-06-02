@@ -55,12 +55,12 @@ Version: 0.0.1+31
 Architecture: arm64
 Maintainer: special-delivery <development@special-delivery.org>
 Installed-Size: 142
-Depends: libc6 (>= 2.41), libcamera0.7 (>= 0.7.1+rpt20260429), libgcc-s1, libopencv-core410 (>= 4.10.0+dfsg), libstdc++6
+Depends: libc6 (>= 2.41), libcamera0.7 (>= 0.7.1+rpt20260429), libgcc-s1, libopencv-core413 (>= 4.13.0), libstdc++6
 Filename: pool/trixie/main/liblccv_0.0.1+31_arm64.deb
-Size: 37360
-MD5sum: 57663da72b5f93937662ff32e2263162
-SHA1: a69604791931007ea9570c6c99b7673e40f5b081
-SHA256: 43a1a4843a3bc21831f90553847f649cfaee0eae3653789a9885824524a8a95e
+Size: 37348
+MD5sum: 2c9213fbea48df92232151f8c3534f50
+SHA1: 177056d9a3af0fc133f2a220d2eea81ffca2ebde
+SHA256: c73642f2b266e35d9c25c742cfec791bfe0a8b789a692919d48f8ea8e49b4ab5
 Section: libs
 Priority: optional
 Description: LCCV (libcamera bindings for OpenCV) (runtime)

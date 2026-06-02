@@ -55,12 +55,12 @@ Version: 0.0.1+31
 Architecture: armhf
 Maintainer: special-delivery <development@special-delivery.org>
 Installed-Size: 89
-Depends: libc6 (>= 2.36), libcamera0.5 (>= 0.5.2+rpt20250903), libgcc-s1, libopencv-core406 (>= 4.6.0+dfsg), libstdc++6
+Depends: libc6 (>= 2.36), libcamera0.5 (>= 0.5.2+rpt20250903), libgcc-s1, libopencv-core413 (>= 4.13.0), libstdc++6
 Filename: pool/bookworm/main/liblccv_0.0.1+31_armhf.deb
-Size: 34284
-MD5sum: f7d4a6b7dc85ae06c05e79848faa96e5
-SHA1: 861ef91e4b1bca68419fe8e1abcfdb5691c75a85
-SHA256: b9bfa65f4485f64e679cea28f07f099e0f98e30d4a6fa46931b91f73d32dcfec
+Size: 34356
+MD5sum: c6a2bca19f55ddc0f44759c73db1b7fe
+SHA1: e98b5ea15d67ada60be7a87c9e249fe776ce117d
+SHA256: 25ac94445c2e12f71100d44a6d3f570fec0b754231bbead2798afac931040581
 Section: libs
 Priority: optional
 Description: LCCV (libcamera bindings for OpenCV) (runtime)

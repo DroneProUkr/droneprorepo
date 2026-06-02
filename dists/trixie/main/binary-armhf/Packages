@@ -55,12 +55,12 @@ Version: 0.0.1+31
 Architecture: armhf
 Maintainer: special-delivery <development@special-delivery.org>
 Installed-Size: 141
-Depends: libc6 (>= 2.41), libcamera0.7 (>= 0.7.1+rpt20260429), libgcc-s1, libopencv-core410 (>= 4.10.0+dfsg), libstdc++6
+Depends: libc6 (>= 2.41), libcamera0.7 (>= 0.7.1+rpt20260429), libgcc-s1, libopencv-core413 (>= 4.13.0), libstdc++6
 Filename: pool/trixie/main/liblccv_0.0.1+31_armhf.deb
-Size: 35780
-MD5sum: cc1b24034ff7e4ec5673a6e803e056f2
-SHA1: 9d91907fb333fd778d80ad544b4eb861460b1a20
-SHA256: 1909df916b4bb91d5f5a2843d5015968d31e1ac493c11b864fa61350cbc71eb3
+Size: 35768
+MD5sum: 74ff4946c4316bd1d62b6b74a764ae2e
+SHA1: be16b977d63f578583d8239f396c873e41ac50a3
+SHA256: e3a0c1e1cf9883c104c7d3e1ea87f73c62f09c4a0f4c429989412d3f998040ee
 Section: libs
 Priority: optional
 Description: LCCV (libcamera bindings for OpenCV) (runtime)

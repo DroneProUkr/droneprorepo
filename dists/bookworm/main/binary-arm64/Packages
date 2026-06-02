@@ -55,12 +55,12 @@ Version: 0.0.1+31
 Architecture: arm64
 Maintainer: special-delivery <development@special-delivery.org>
 Installed-Size: 142
-Depends: libc6 (>= 2.36), libcamera0.5 (>= 0.5.2+rpt20250903), libgcc-s1, libopencv-core406 (>= 4.6.0+dfsg), libstdc++6
+Depends: libc6 (>= 2.36), libcamera0.5 (>= 0.5.2+rpt20250903), libgcc-s1, libopencv-core413 (>= 4.13.0), libstdc++6
 Filename: pool/bookworm/main/liblccv_0.0.1+31_arm64.deb
-Size: 36344
-MD5sum: b949e57199940d4f750dfa01447bb614
-SHA1: f45be795787b42747cf2338ba753e1509a71b523
-SHA256: 98fbc87babb2133b38e41ccc2ace0c01032d9b04cdd2a291536914b968d2f164
+Size: 36484
+MD5sum: 9a46c30c074724286bfadf468399cf77
+SHA1: f58e5cd4c140127f2489838b6416641c33713d45
+SHA256: 629f2f26b63a537e9d9ac982d135892d0bc3250526abd410bbd3f9c34f9535d1
 Section: libs
 Priority: optional
 Description: LCCV (libcamera bindings for OpenCV) (runtime)
