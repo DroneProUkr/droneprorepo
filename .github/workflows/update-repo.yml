@@ -1,0 +1,85 @@
+name: Update APT repository
+
+# Commit .deb packages into pool/ and push — this workflow rebuilds the
+# Packages/Release indexes (update-repo.sh), signs them with the repo GPG key
+# and publishes the whole repository to GitHub Pages.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'pool/**'
+      - 'repo.key'
+      - 'update-repo.sh'
+      - '.github/workflows/update-repo.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read   # checkout
+  pages: write     # deploy to Pages
+  id-token: write  # OIDC token for deploy-pages
+
+# Never run two deploys at once; let an in-flight deploy finish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install repo tooling
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends dpkg-dev apt-utils gnupg
+
+      - name: Import GPG signing key
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          # Must match the key update-repo.sh signs with (EMAIL in the script).
+          GPG_UID: development@special-delivery.org
+        run: |
+          if [ -z "$GPG_PRIVATE_KEY" ]; then
+            echo "::error::Secret GPG_PRIVATE_KEY is not set" >&2
+            exit 1
+          fi
+          mkdir -p ~/.gnupg && chmod 700 ~/.gnupg
+          # Non-interactive signing (no pinentry prompt). Written wholesale so re-runs stay clean.
+          printf 'allow-loopback-pinentry\n' > ~/.gnupg/gpg-agent.conf
+          printf 'pinentry-mode loopback\n'  > ~/.gnupg/gpg.conf
+          gpgconf --kill gpg-agent || true
+          echo "$GPG_PRIVATE_KEY" | gpg --batch --import
+          gpg --list-secret-keys --keyid-format=long
+          # Fail fast if the secret isn't the expected signing key.
+          if ! gpg --list-secret-keys "$GPG_UID" >/dev/null 2>&1; then
+            echo "::error::Expected signing key <$GPG_UID> not found after import" >&2
+            exit 1
+          fi
+
+      - name: Build & sign repository indexes
+        run: ./update-repo.sh
+
+      - name: Assemble site
+        run: |
+          rm -rf _site && mkdir -p _site
+          # Hardlink the package tree so we don't duplicate ~130 MB of .deb.
+          cp -rl pool dists _site/
+          cp index.html repo.key _site/
+          touch _site/.nojekyll
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
