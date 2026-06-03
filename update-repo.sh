@@ -5,9 +5,8 @@ EMAIL="development@special-delivery.org"
 SUITES=(bookworm trixie)
 COMPONENT="main"
 ARCHES=(arm64 armhf)
-ORIGIN="dronerepo"
-LABEL="dronerepo"
-REPO_URL="https://zarcsis.github.io/dronerepo/"
+ORIGIN="droneprorepo"
+REPO_URL="https://droneproukr.github.io/$ORIGIN/"
 
 for SUITE in "${SUITES[@]}"; do
     echo "=== $SUITE ==="
@@ -31,7 +30,7 @@ for SUITE in "${SUITES[@]}"; do
     echo "Generating Release..."
     apt-ftparchive \
         -o "APT::FTPArchive::Release::Origin=$ORIGIN" \
-        -o "APT::FTPArchive::Release::Label=$LABEL" \
+        -o "APT::FTPArchive::Release::Label=$ORIGIN" \
         -o "APT::FTPArchive::Release::Suite=$SUITE" \
         -o "APT::FTPArchive::Release::Codename=$SUITE" \
         -o "APT::FTPArchive::Release::Architectures=${ARCHES[*]}" \
@@ -51,7 +50,7 @@ echo "Generating index.html..."
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>dronerepo</title>
+<title>DroneProRepo</title>
 <style>
   :root {
     --bg: #ffffff;
@@ -93,12 +92,12 @@ echo "Generating index.html..."
 <meta name="color-scheme" content="light dark">
 </head>
 <body>
-<h1>dronerepo</h1>
+<h1>DroneProRepo</h1>
 <p>Debian package repository for <code>bookworm</code> and <code>trixie</code>.</p>
 
 <h2>Setup</h2>
-<pre>curl -fsSL ${REPO_URL}repo.key | sudo tee /etc/apt/trusted.gpg.d/dronerepo.asc &gt; /dev/null
-echo "deb ${REPO_URL} \$(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/dronerepo.list
+<pre>sudo curl -fsSL ${REPO_URL}repo.key -o /etc/apt/trusted.gpg.d/$ORIGIN.asc
+sudo echo "deb ${REPO_URL} \$(lsb_release -sc) main" > /etc/apt/sources.list.d/$ORIGIN.list
 sudo apt update</pre>
 <p>Signing key: <a href="repo.key">repo.key</a></p>
 HEADER
