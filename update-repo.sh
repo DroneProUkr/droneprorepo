@@ -43,6 +43,21 @@ for SUITE in "${SUITES[@]}"; do
     gpg --default-key "$EMAIL" --clearsign -o "$DIST_DIR/InRelease" "$DIST_DIR/Release"
 done
 
+# The `luckfox` section: plain files, not an apt suite. VOT_C's Luckfox Pico (RV1106) build
+# downloads its cross-built dependency sysroot from here (VOT_C: platform/luckfox/sdk).
+# The archives are committed; SHA256SUMS and its signature are generated, like dists/.
+LUCKFOX_DIR="luckfox"
+shopt -s nullglob
+LUCKFOX_FILES=("$LUCKFOX_DIR"/*.tar.xz)
+shopt -u nullglob
+if [ ${#LUCKFOX_FILES[@]} -gt 0 ]; then
+    echo "=== $LUCKFOX_DIR ==="
+    (cd "$LUCKFOX_DIR" && sha256sum -- *.tar.xz > SHA256SUMS)
+    echo "Signing $LUCKFOX_DIR/SHA256SUMS..."
+    rm -f "$LUCKFOX_DIR/SHA256SUMS.gpg"
+    gpg --default-key "$EMAIL" -abs -o "$LUCKFOX_DIR/SHA256SUMS.gpg" "$LUCKFOX_DIR/SHA256SUMS"
+fi
+
 echo "Generating index.html..."
 {
     cat <<HEADER
@@ -128,6 +143,20 @@ HEADER
         done
         echo '</tbody></table>'
     done
+
+    if [ ${#LUCKFOX_FILES[@]} -gt 0 ]; then
+        printf '\n<h2>luckfox</h2>\n'
+        echo '<p>Cross-built dependency sysroot for the Luckfox Pico (RV1106) build of VOT_C. Not an apt suite: fetched and verified by <code>platform/luckfox/sdk/fetch-sdk.sh</code>. Checksums: <a href="luckfox/SHA256SUMS">SHA256SUMS</a> (<a href="luckfox/SHA256SUMS.gpg">signature</a>).</p>'
+        echo '<table>'
+        echo '<thead><tr><th>File</th><th class="size">Size</th><th>Download</th></tr></thead>'
+        echo '<tbody>'
+        for F in "${LUCKFOX_FILES[@]}"; do
+            SIZE_HUMAN=$(numfmt --to=iec --suffix=B --format="%.1f" "$(stat -c %s "$F")")
+            printf '<tr><td><code>%s</code></td><td class="size">%s</td><td><a href="%s">%s</a></td></tr>\n' \
+                "$(basename "$F")" "$SIZE_HUMAN" "$F" "$(basename "$F")"
+        done
+        echo '</tbody></table>'
+    fi
 
     printf '\n<p class="meta">Generated %s</p>\n' "$(date -u '+%Y-%m-%d %H:%M UTC')"
     echo '</body></html>'

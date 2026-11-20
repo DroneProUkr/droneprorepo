@@ -33,6 +33,8 @@ fingerprint `4B55C2A7D39FC8ACDDBAEE564986C8721BB6F334`).
 
 ```
 pool/<suite>/main/*.deb     # the actual packages, committed to git
+luckfox/*.tar.xz            # Luckfox Pico (RV1106) dependency sysroot for VOT_C, committed
+luckfox/SHA256SUMS{,.gpg}   # generated: checksums of the archives + detached signature
 dists/<suite>/              # generated indexes (Packages, Release, signatures)
 index.html                  # generated package listing / landing page
 repo.key                    # public signing key (ASCII-armored)
@@ -58,6 +60,23 @@ repository secret.
 You can also trigger a rebuild manually from the Actions tab
 (`workflow_dispatch`).
 
+## The `luckfox` section
+
+Not an apt suite. `luckfox/` holds the cross-built dependency sysroot that VOT_C's
+Luckfox Pico (RV1106) build links against — our own builds of open-source libraries
+(zlib, libsodium, OpenSSL, curl, libmsp, libdatachannel, libwebsockets, OpenCV, …) for
+the board's uClibc toolchain. **Only that goes here: nothing vendor-supplied** (no
+toolchain, no Rockchip headers or libraries — VOT_C takes those by git from the vendor's
+own repository).
+
+- Published at `https://droneproukr.github.io/droneprorepo/luckfox/<file>`.
+- Consumer: `platform/luckfox/sdk/fetch-sdk.sh` in VOT_C (`deploy.sh … -D PLATFORM=LUCKFOX --repo`).
+  It pins the archive's sha256 in `platform/luckfox/sdk/BUNDLE` and also checks the
+  signature of `luckfox/SHA256SUMS` against `repo.key`.
+- Adding a bundle: build it with VOT_C's `platform/luckfox/sdk/make-sdk-bundle.sh`, drop
+  the `.tar.xz` into `luckfox/`, commit and push. CI generates and signs `SHA256SUMS`
+  and publishes. Old archives stay: an older VOT_C commit still pins them.
+
 ## `update-repo.sh`
 
 The script that builds the repository indexes. CI runs it, but it also runs
@@ -74,7 +93,10 @@ For each suite in `bookworm trixie` it:
 3. **Signs `Release`** with GPG, producing both a detached `Release.gpg` and an
    inline `InRelease`.
 
-After the suites are processed it regenerates **`index.html`** — a self-contained
+Then, when `luckfox/` holds archives, it writes `luckfox/SHA256SUMS` and signs it
+(detached, `SHA256SUMS.gpg`) with the same key.
+
+After that it regenerates **`index.html`** — a self-contained
 landing page (with a light/dark theme) that lists every package, its version,
 architecture and size with download links.
 

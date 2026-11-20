@@ -9,6 +9,7 @@ on:
     branches: [main]
     paths:
       - 'pool/**'
+      - 'luckfox/**'
       - 'repo.key'
       - 'update-repo.sh'
       - '.github/workflows/update-repo.yml'
@@ -66,6 +67,8 @@ jobs:
           rm -rf _site && mkdir -p _site
           # Hardlink the package tree so we don't duplicate ~130 MB of .deb.
           cp -rl pool dists _site/
+          # The luckfox section (plain files + generated, signed SHA256SUMS), when present.
+          if [ -d luckfox ]; then cp -rl luckfox _site/; fi
           cp index.html repo.key _site/
           touch _site/.nojekyll
 
